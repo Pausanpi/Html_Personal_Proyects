@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        input, button {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form id="citaForm">
+        <h2>Agendar una cita</h2>
+        <input type="text" id="nombre" placeholder="Tu nombre" required />
+        <input type="date" id="fecha" required />
+        <input type="email" id="correo" placeholder="Tu correo" required />
+        <button type="submit">Agendar</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        // Inicializar EmailJS
+        (function() {
+            emailjs.init("dOXVkPfAswaa1P0LL"); // Aquí va tu User ID de EmailJS
+        })();
+
+        const form = document.getElementById('citaForm');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Recolectar los datos del formulario
+            const nombre = document.getElementById('nombre').value;
+            const fecha = document.getElementById('fecha').value;
+            const correo = document.getElementById('correo').value;
+
+            // Configuración del email a enviar
+            const templateParams = {
+                nombre: nombre,
+                fecha: fecha,
+                correo: correo
+            };
+
+            // Enviar el correo a través de EmailJS
+            emailjs.send('service_kkvm9re', 'template_by3cdj5', templateParams)
+                .then(function(response) {
+                    alert('Cita agendada con éxito!');
+                    form.reset();
+                }, function(error) {
+                    alert('Error al agendar la cita. Inténtalo de nuevo.');
+                });
+        });
+    </script>
+</body>
+</html>
