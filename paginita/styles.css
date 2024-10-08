@@ -1,0 +1,67 @@
+/* Global styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	background-color: rgb(111, 212, 255);
+	background-image: url('https://imgs.search.brave.com/7U2hnZpMATU-4NyQjTX1SQcmoqiw4eRNxzKJb9Rqz6o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL25ld19nYWxs/ZXJ5LzgzNV9jbG91/ZHMtcG5nLnBuZw');
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  /* Container for content */
+  .container {
+	background-color: rgba(255, 105, 180, 0.8);
+	padding: 20px;
+	border-radius: 20px;
+	/*border: 2px solid #c2185b;*/
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Content inside the container */
+  .content {
+	text-align: center;
+  }
+  
+  .image {
+	margin-top: 10px;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	width: 300px;
+  }
+  
+  .text {
+	color: white;
+	margin-bottom: 20px;
+	font-size: 24px;
+  }
+
+  .footer {
+	color: white;
+	font-size: 5px;
+  }
+  
+  /* Button styles */
+  .btn {
+	background-color: #c2185b;
+	color: white;
+	font-weight: bold;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	font-size: 18px;
+	transition: background-color 0.3s ease;
+	margin-bottom: 10px;
+  }
+  
+  .btn:hover {
+	background-color: #8e1644;
+  }
+  
