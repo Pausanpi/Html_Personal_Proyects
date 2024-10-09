@@ -29,18 +29,18 @@ body {
 
 /* Contenedor para la pregunta y botones */
 .container1 {
-    background-color: #fff; /* Color de fondo blanco */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centrar texto */
-    width: 300px; /* Ancho fijo para el contenedor */
-	margin: 20px
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Estilo de la pregunta inicial */
 #preguntaInicial {
     text-align: center;
+	opacity: 1;
 }
 
 /* Estilo de los botones de "Sí" y "No" */
@@ -55,31 +55,39 @@ body {
     font-size: 20px;
 	display: block;
 	width: 93%;
+	opacity: 1;
 }
 
-#preguntaInicial button:hover {
-    background-color: #e91e63; /* Color más oscuro al pasar el mouse */
-}
-
-/* Estilo del formulario */
-form {
-    background-color: white;
+/* Contenedor para el formulario y opciones de cita */
+.container2 {
+	background-color: rgba(255, 255, 255, 0.5);
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 600px;
     text-align: center;
 }
 
-/* Estilo del título */
-form h2 {
+/* Contenido del formulario y las opciones en paralelo */
+.form-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Estilo del formulario (parte izquierda) */
+.formulario-cita {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.formulario-cita h2 {
     margin-bottom: 20px;
     font-size: 24px;
-    text-align: center;
 }
 
-/* Estilo para los inputs y el botón */
-input, button {
+input {
     width: 100%;
     margin-bottom: 10px;
     padding: 10px;
@@ -88,20 +96,189 @@ input, button {
     box-sizing: border-box;
 }
 
-/* Ajustes para el campo de fecha */
-input[type="date"] {
-    padding: 8px 10px;
-    box-sizing: border-box;
+/* Estilo para las opciones de cita (parte derecha) */
+#opcionesCita {
+    flex: 1;
 }
 
-/* Estilo del botón Agendar */
-button {
-    background-color: #007bff;
+#opcionesCita h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#opcionesCita label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Botón para agendar cita */
+button[type="submit"] {
+    background-color: #ff6de9;
     color: white;
     border: none;
+    padding: 10px;
     cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 20px;
 }
 
-button:hover {
-    background-color: #0056b3;
+button[type="submit"]:hover {
+    background-color: #fd6bc3;
 }
+
+
+*, ::after, ::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+  }
+  
+  a {
+	text-decoration: none;
+  }
+  
+  ul {
+	list-style: none;
+  }
+  
+  html {
+	font-size: 62.5%;
+  }
+  
+  body {
+	box-sizing: border-box; 
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 1.7;
+	background-color: azure;
+  }
+  
+  .center-text {
+	text-align: center;
+  }
+  
+  .boxShadow {
+	box-shadow: 10px 5px 5px #646363; }
+  
+  /* ----------------------------- Main Container ----------------------------- */
+  .main-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem;
+	gap: 5rem;
+  }
+  
+  /* -------------------------------------------------------------------------- */
+  /* ----------------------------- Card Component ----------------------------- */
+  .card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	width: 30rem;
+	height: max-content;
+	border-radius: 1rem;
+	/*border: 2px solid #141414;*/
+	/*box-shadow: 10px 5px 5px #979797;*/
+  }
+  .card h3 {
+	font-size: larger;
+	padding-top: .5rem;
+  }
+  
+  /* --------------------------------- Card-11 Today Sales (Only CSS)-------------------------------- */
+  .card-11 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	margin: 0 auto;
+	padding: 20px;
+  }
+  .card-11-carousel-container {
+	position: relative;
+	width: 30rem;
+	overflow: hidden;
+  }
+  .card-11-carousel {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+  }
+  .card-11-carousel-item {
+	flex: none;
+	text-align: center;
+	padding: 40px;
+	border-radius: 10px;
+	/*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+	width: 28rem;
+	/*border: #000000 1px solid;*/
+	margin: 1rem;
+	background-color: rgba(255, 245, 253, 0.569);
+  }
+  .card-11-carousel-item img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+  }
+  .card-11-carousel-item h2 {
+	font-size: 3rem;
+	margin-bottom: 10px;
+  }
+  .card-11-carousel-item p {
+	font-size: 2rem;
+  }
+  .card-11-carousel-item i {
+	font-size: 3rem;
+	padding: 10px;
+	border-radius: 50%;
+	background-color: #f0a9e2;
+  }
+  .card-11-carousel-item:nth-child(1) h2,
+  .card-11-carousel-item:nth-child(1) p {
+	color: #0c94e4;
+  }
+  .card-11-carousel-item:nth-child(2) h2,
+  .card-11-carousel-item:nth-child(2) p {
+	color: #0c23f5;
+  }
+  .card-11-carousel-item:nth-child(3) h2,
+  .card-11-carousel-item:nth-child(3) p {
+	color: #389204;
+  }
+  .card-11 input[type="radio"] {
+	display: none;
+  }
+  .card-11-carousel-indicators {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+  }
+  .card-11-carousel-indicators label {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #ccc;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+  .card-11 input[type="radio"]:nth-of-type(1):checked ~ .card-11-carousel {
+	transform: translateX(0%);
+  }
+  .card-11 input[type="radio"]:nth-of-type(2):checked ~ .card-11-carousel {
+	transform: translateX(-100%);
+  }
+  .card-11 input[type="radio"]:nth-of-type(3):checked ~ .card-11-carousel {
+	transform: translateX(-200%);
+  }
+  .card-11 input[type="radio"]:nth-of-type(1):checked ~ .card-11-carousel-indicators label:nth-of-type(1),
+  .card-11 input[type="radio"]:nth-of-type(2):checked ~ .card-11-carousel-indicators label:nth-of-type(2),
+  .card-11 input[type="radio"]:nth-of-type(3):checked ~ .card-11-carousel-indicators label:nth-of-type(3) {
+	background-color: #333;
+  }
+  

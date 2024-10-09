@@ -6,23 +6,80 @@
     <title>Agendar Cita</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Sección de inicio con el mensaje y botones -->
-	 <div class="container1">
-		<div id="preguntaInicial">
-       		<h1>¿Quieres quedar conmigo?</h1>
-        	<button id="botonSi">Sí</button>
-        	<button id="botonNo">No</button>
-    	</div>
-	 </div>
-    
-    <!-- Formulario para agendar cita, inicialmente oculto -->
-    <form id="citaForm" style="display: none;">
-        <h2>Agendar una cita</h2>
-        <input type="text" id="nombre" placeholder="Tu nombre" required />
-        <input type="date" id="fecha" required />
-        <button type="submit">Agendar</button>
-    </form>
+    <div class="container1">
+
+        <div id="preguntaInicial">
+
+            <h1>¿Quieres quedar conmigo?</h1>
+            <button id="botonSi">Sí</button>
+            <button id="botonNo">No</button>
+        </div>
+    </div>
+
+    <!-- Formulario para agendar cita y opciones, inicialmente ocultos -->
+    <div class="container2" style="display: none;">
+
+        <form id="citaForm">
+
+            <div class="form-content">
+
+                <!-- Parte izquierda: Formulario -->
+                <div class="formulario-cita">
+
+                    <h2>Agendar una cita</h2>
+                    <input type="text" id="nombre" placeholder="Tu nombre" required />
+                    <input type="date" id="fecha" required />
+                    <input type="email" id="correo" placeholder="Tu correo" required />
+                </div>
+
+                <!-- Parte derecha: Opciones de citas -->
+                <div id="opcionesCita">
+
+                    <h2>Elige una opción</h2>
+					
+                    <div class="main-container">
+						<div class="card card-11">
+							<div class="card-11-carousel-container">
+								<input type="radio" name="card-11-carousel" id="card-11-slide1" checked>
+								<input type="radio" name="card-11-carousel" id="card-11-slide2">
+								<input type="radio" name="card-11-carousel" id="card-11-slide3">
+								
+								<div class="card-11-carousel">
+									<div class="card-11-carousel-item" onclick="selectOption('Opción 1')">
+										<img src="assets/NocheJuegos.png" alt="Opción 1" />
+										<h2>Noche de juegos</h2>
+										<p>Descripción</p>
+									</div>
+									<div class="card-11-carousel-item" onclick="selectOption('Opción 2')">
+										<img src="assets/CenaRomantica.png" alt="Opción 2" />
+										<h2>Cena romántica</h2>
+										<p>Descripción</p>
+									</div>
+									<div class="card-11-carousel-item" onclick="selectOption('Opción 3')">
+										<img src="assets/picnic.png" alt="Opción 3" />
+										<h2>Picnic</h2>
+										<p>Descripción</p>
+									</div>
+								</div>
+	
+								<div class="card-11-carousel-indicators">
+									<label for="card-11-slide1"></label>
+									<label for="card-11-slide2"></label>
+									<label for="card-11-slide3"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+            </div>
+
+            <!-- Botón para agendar cita -->
+            <button type="submit">Agendar</button>
+        </form>
+    </div>
 
     <!-- EmailJS con la nueva versión del SDK -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
