@@ -1,0 +1,85 @@
+/* Contenedor para el formulario y opciones de cita */
+.container2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+}
+
+/* Contenedor para la pregunta y botones */
+.container1 {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+#citaForm h2 {
+    color: #ff37b2;
+    font-size: 30px;
+    margin-bottom: -30px;
+}
+
+/* Estilo del formulario (parte izquierda) */
+.formulario-cita {
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 20px;
+    align-self: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"] {
+    width: 100%; /* Hacer que ocupen el 100% del ancho */
+    padding: 10px;
+    margin: 10px 0; /* Espacio entre campos */
+    border: 2px solid #ff66b2; /* Color del borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    background-color: #fff; /* Color de fondo normal */
+    color: #000;
+    transition: border-color 0.3s, background-color 0.3s; /* Transición suave */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus {
+    border-color: #ff33cc; /* Color del borde al enfocar */
+    background-color: #fce4ec; /* Color de fondo al enfocar */
+    outline: none; /* Quitar el contorno */
+}
+
+input:active,
+input:focus-visible {
+    outline: none;
+    background-color: #fff;
+}
+
+#preguntaInicial {
+    text-align: center;
+	opacity: 1;
+}
+
+.form-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}

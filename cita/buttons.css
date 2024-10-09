@@ -1,0 +1,55 @@
+/* Estilo de los botones de "Sí" y "No" */
+#preguntaInicial button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #ff58c5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    display: block;
+    width: 93%;
+}
+
+/* Clase para el botón seleccionado */
+.opcion-seleccionada {
+    background-color: #ff6de9; /* Cambia el color del botón cuando está seleccionado */
+    color: white;
+}
+
+.opcion-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffa2f1;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.opcion-btn:hover {
+    background-color: #ffa2f1;
+}
+
+.opcion-btn.active {
+    background-color: #ff6de9; /* Cambia el color del botón cuando está activo */
+    color: white;
+    border: 2px solid #ff37b2;
+}
+
+/* Botón para agendar cita */
+button[type="submit"] {
+    background-color: #ff6de9;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #fd6bc3;
+}

@@ -1,0 +1,37 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    animation: gradientAnimation 10s ease infinite;
+    background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #ffdfba);
+    background-size: 400% 400%;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    color: #902157;
+}
+
+h2 {
+    color: #ff66b2; /* Color de encabezados */
+    text-align: center; /* Centrar encabezados */
+}
