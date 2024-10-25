@@ -1,0 +1,70 @@
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #eb3737;
+}
+
+@font-face {
+    font-family: 'Christmas';
+    src: url('fonts/Christmas.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*-----------------------------*/
+
+.container {
+	justify-content: center;
+}
+
+.navidad {
+	padding: 20px;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.navi {
+	font-family: 'Christmas';
+	font-size: 100px;
+	color: white;
+}
+
+.countdown, .texto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+	margin-bottom: 10px;
+}
+
+.time-unit, .texto h3 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+
+.countdown {
+	font-size: 50px;
+}
+
+.texto {
+	margin-bottom: 70px;
+}
+
+.texto h3 {
+    font-size: 20px;
+}
+
+
+.snowman {
+	height: 50%;
+	width: 50%;
+}
