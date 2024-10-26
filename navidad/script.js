@@ -38,37 +38,14 @@ function contNavidad() {
     }
 }
 
-function createSnowflakes() {
-    const snowContainer = document.getElementById('snow-container');
-    
-    // Crea copos de nieve continuamente
-    setInterval(function() {
-        let snowflake = document.createElement('div');
-        snowflake.classList.add('snowflake');
-
-        // Tamaño y posición aleatoria del copo de nieve
-        let size = Math.random() * 10 + 5 + 'px'; // Copos entre 5px y 15px
-        let leftPosition = Math.random() * 100 + 'vw'; // Posición horizontal aleatoria
-        let fallDuration = Math.random() * 5 + 5 + 's'; // Duración entre 5 y 10 segundos
-
-        snowflake.style.width = size;
-        snowflake.style.height = size;
-        snowflake.style.left = leftPosition;
-        snowflake.style.animationDuration = fallDuration;
-
-        snowContainer.appendChild(snowflake);
-
-        // Eliminar el copo de nieve cuando termina de caer
-        setTimeout(function() {
-            snowflake.remove();
-        }, parseFloat(fallDuration) * 1000); // Convertimos a milisegundos para el temporizador
-    }, 300); // Generar un copo de nieve cada 300ms (0.3 segundos)
+function PlayAudio() {
+    document.getElementById("miAudio").play();
 }
+
 
 setInterval(updateCalendar, 1000);
 setInterval(contNavidad, 1000);
 
 updateCalendar();
 contNavidad();
-
-createSnowflakes(100);
+PlayAudio();
