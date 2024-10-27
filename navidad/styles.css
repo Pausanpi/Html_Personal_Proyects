@@ -56,15 +56,54 @@ body {
 }
 
 .texto {
-	margin-bottom: 70px;
+	margin-bottom: 40px;
 }
 
 .texto h3 {
     font-size: 20px;
 }
 
-
+/*imagen muñeco de nieve*/
 .snowman {
 	height: 50%;
 	width: 50%;
+	margin-bottom: 20px;
 }
+
+/*particulas*/
+canvas#particleCanvas {
+    position: absolute; 
+	pointer-events: none;
+    animation: load 0.4s ease-in-out forwards;
+    z-index: 1;
+    width: 100%;
+}
+
+/* Estilo del botón */
+.candy-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #600000;
+    border-color: #600000;
+    border-radius: 8px;
+    cursor: pointer;
+    background: repeating-linear-gradient(
+      135deg,           /* Ángulo de las rayas */
+      #eb3737,         /* Rojo */
+      #eb3737 10px,    /* Ancho de la franja roja */
+      #fff 10px,       /* Blanco comienza justo después de la roja */
+      #fff 20px        /* Ancho de la franja blanca */
+    );
+    transition: transform 0.2s;
+  }
+
+  /* Efecto al pasar el mouse */
+  .candy-button:hover {
+    transform: scale(1.05); /* Agranda el botón ligeramente */
+  }
+
+  /* Efecto al hacer clic */
+  .candy-button:active {
+    transform: scale(0.95); /* Hace que el botón se vea "presionado" */
+  }
