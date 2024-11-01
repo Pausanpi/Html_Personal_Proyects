@@ -1,0 +1,142 @@
+body {
+    background-image: url('assets/fondo4.png'); /* Asegúrate de poner aquí la ruta de tu imagen */
+    background-size: cover;         /* Escala la imagen para cubrir toda la pantalla */
+    background-position: center;    /* Centra la imagen en la pantalla */
+    background-repeat: no-repeat;   /* Evita que la imagen se repita */
+    background-attachment: fixed;   /* Hace que el fondo permanezca fijo al hacer scroll */
+    margin: 0;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 8px;
+    height: 100vh;
+}
+    
+.parent div {
+	background-color: rgba(255, 255, 255, 0.015); /* Fondo blanco semi-transparente */
+    /*backdrop-filter: blur(8px); /* Desenfoque del contenido detrás */
+    border: 3px dashed rgba(255, 255, 255, 0.572);
+}
+
+.div2 {
+    
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.div3 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.div4 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+.div5 {
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.div6 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.div7 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.div8 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.div9 {
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+
+.div10 {
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+.div11 {
+    grid-column-start: 4;
+}
+
+.div12 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+
+.div13 {
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+
+.div14 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 5;
+}
+
+.div15 {
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+.div16 {
+    grid-column-start: 1;
+    grid-row-start: 6;
+}
+
+.div17 {
+    grid-column-start: 2;
+    grid-row-start: 5;
+}
+
+.div18 {
+    grid-column-start: 2;
+    grid-row-start: 6;
+}
+
+.div19 {
+    grid-column-start: 2;
+    grid-row-start: 7;
+}
+
+.div20 {
+    grid-column-start: 3;
+    grid-row-start: 7;
+}
+
+.div21 {
+    grid-column-start: 1;
+    grid-row-start: 7;
+}
+
+.div22 {
+    grid-column-start: 1;
+    grid-row-start: 5;
+}
+
+.div23 {
+    grid-column-start: 4;
+    grid-row-start: 6;
+}
+
+.div24 {
+    grid-row-start: 7;
+}
+        
