@@ -1,5 +1,5 @@
 body {
-    background-image: url('assets/fondo4.png'); /* Asegúrate de poner aquí la ruta de tu imagen */
+    background-image: url('assets/fondo.png'); /* Asegúrate de poner aquí la ruta de tu imagen */
     background-size: cover;         /* Escala la imagen para cubrir toda la pantalla */
     background-position: center;    /* Centra la imagen en la pantalla */
     background-repeat: no-repeat;   /* Evita que la imagen se repita */
@@ -17,9 +17,53 @@ body {
 }
     
 .parent div {
-	background-color: rgba(255, 255, 255, 0.015); /* Fondo blanco semi-transparente */
-    /*backdrop-filter: blur(8px); /* Desenfoque del contenido detrás */
+	background-color: rgba(255, 255, 255, 0);
     border: 3px dashed rgba(255, 255, 255, 0.572);
+}
+
+.parent button {
+	width: 100%;
+	height: 100%;
+	border: none;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.modal {
+	display: none;
+    position: fixed;
+	z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 700px;
+    border: 5px solid white;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.049);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .div2 {
