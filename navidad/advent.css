@@ -109,7 +109,7 @@ h1 {
     .parent {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(12, 1fr);
-        padding: 80px 60px;
+        padding: 80px 30px;
         height: 100vh;
     }
 
