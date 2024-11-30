@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Loop through each button and enable/disable based on the date
     for (var i = 1; i <= 24; i++) {
         var button = document.querySelector('.div' + i + ' button');
-        if (currentMonth === 10 && i <= currentDay) { // December is month 11
+        if (currentMonth === 11 && i <= currentDay) { // December is month 11
             button.disabled = false;
         } else {
             button.disabled = true;
