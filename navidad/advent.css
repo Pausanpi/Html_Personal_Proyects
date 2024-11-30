@@ -116,4 +116,8 @@ h1 {
     .parent div {
         background-size: 40%;
     }
-}
+
+    .parent button {
+	margin-top: 15px;
+	margin-bottom: 15px;
+     }
