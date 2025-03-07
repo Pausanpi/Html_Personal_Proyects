@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculadora">
+
+		<div class="line1">
+			<button onclick="limpiar()" class="amarillo">C</button>
+			<div id="pantalla" class="pantalla">0</div>
+		</div>
+        
+		<div class="line">
+			<button onclick="agregarNumero('7')" class="azul">7</button>
+            <button onclick="agregarNumero('8')" class="azul">8</button>
+            <button onclick="agregarNumero('9')" class="azul">9</button>
+			<button onclick="operacion('*')" class="amarillo">x</button>
+
+			<button onclick="agregarNumero('4')" class="azul">4</button>
+            <button onclick="agregarNumero('5')" class="azul">5</button>
+            <button onclick="agregarNumero('6')" class="azul">6</button>
+            <button onclick="operacion('/')" class="amarillo">/</button>
+
+			<button onclick="agregarNumero('1')" class="azul">1</button>
+            <button onclick="agregarNumero('2')" class="azul">2</button>
+            <button onclick="agregarNumero('3')" class="azul">3</button>
+			<button onclick="operacion('+')" class="amarillo">+</button>
+
+			<button onclick="agregarNumero('.')" class="azul">.</button>
+			<button onclick="agregarNumero('0')" class="azul">0</button>
+			<button onclick="calcular()" class="verde">=</button>
+            <button onclick="operacion('-')" class="amarillo">-</button> 
+		</div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
